@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ICP Checker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="header">
+    <span class="logo">ICP Checker</span>
+    <a href="settings.html" target="_blank" class="settings-link">Settings</a>
+  </div>
+
+  <div id="error-state" class="state hidden">
+    <p id="error-message" class="error-text"></p>
+  </div>
+
+  <div id="loading-state" class="state hidden">
+    <div class="spinner"></div>
+    <p>Analyzing profile...</p>
+  </div>
+
+  <div id="result-state" class="state hidden">
+    <div class="profile-info">
+      <strong id="profile-name"></strong>
+      <span id="profile-headline"></span>
+    </div>
+
+    <div class="fit-badge-row">
+      <span id="fit-badge" class="fit-badge"></span>
+      <span id="fit-score" class="fit-score"></span>
+    </div>
+
+    <div class="score-bar-wrap">
+      <div id="score-bar" class="score-bar"></div>
+    </div>
+
+    <div class="section">
+      <h4>Why</h4>
+      <p id="fit-reason"></p>
+    </div>
+
+    <div class="section">
+      <h4>What to say</h4>
+      <p id="fit-message"></p>
+      <button id="copy-btn" class="copy-btn">Copy message</button>
+    </div>
+  </div>
+
+  <div id="not-linkedin" class="state hidden">
+    <p class="error-text">Visit a LinkedIn profile page to use ICP Checker.</p>
+  </div>
+
+  <div class="promo">
+    Need help with your marketing?
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdew87rWJ7cdpqUe2bLbw5blKJLmAuSibL0IPt780qh7tPY1Q/viewform?usp=header" target="_blank">Work with John</a>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
+</body>
+</html>

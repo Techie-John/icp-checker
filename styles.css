@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+  width: 320px;
+  min-height: 200px;
+  background: #ffffff;
+  color: #111111;
+}
+
+body.settings-page {
+  width: 400px;
+  padding-bottom: 24px;
+}
+
+.hidden { display: none !important; }
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: #f4f4f5;
+  border-bottom: 1px solid #e4e4e7;
+  margin-bottom: 12px;
+}
+
+.logo { font-weight: 700; font-size: 14px; color: #111; }
+
+.settings-link { font-size: 12px; color: #666; text-decoration: none; }
+.settings-link:hover { color: #111; }
+
+/* States */
+.state { padding: 12px 16px; }
+
+.error-text { color: #dc2626; font-size: 13px; line-height: 1.5; }
+
+/* Loading */
+#loading-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 24px;
+}
+
+#loading-state p { color: #666; font-size: 13px; }
+
+.spinner {
+  width: 28px;
+  height: 28px;
+  border: 3px solid #e4e4e7;
+  border-top-color: #4f46e5;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* Profile info */
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 12px;
+}
+
+.profile-info strong { font-size: 15px; color: #111; }
+.profile-info span { font-size: 12px; color: #666; }
+
+/* Fit badge */
+.fit-badge-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.fit-badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.fit-badge.strong { background: #dcfce7; color: #15803d; }
+.fit-badge.weak   { background: #fef9c3; color: #a16207; }
+.fit-badge.no-fit { background: #fee2e2; color: #dc2626; }
+
+.fit-score { font-size: 13px; color: #666; }
+
+/* Score bar */
+.score-bar-wrap {
+  background: #e4e4e7;
+  border-radius: 999px;
+  height: 5px;
+  width: 100%;
+  margin-bottom: 14px;
+  overflow: hidden;
+}
+
+.score-bar {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.5s ease;
+}
+
+/* Sections */
+.section { margin-bottom: 14px; }
+
+.section h4 {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #999;
+  margin-bottom: 6px;
+}
+
+.section p { font-size: 13px; line-height: 1.6; color: #333; }
+
+/* Copy button */
+.copy-btn {
+  margin-top: 8px;
+  background: #ededf5;
+  border: 1px solid #c7c7d4;
+  color: #4f46e5;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.copy-btn:hover { background: #ddddf5; }
+
+/* Promo footer */
+.promo {
+  padding: 8px 16px;
+  background: #f0f0ff;
+  border-top: 1px solid #e4e4e7;
+  font-size: 11px;
+  color: #666;
+  text-align: center;
+}
+
+.promo a { color: #4f46e5; text-decoration: none; font-weight: 600; margin-left: 4px; }
+.promo a:hover { color: #4338ca; }
+
+/* Settings form */
+.settings-form {
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.settings-form label { font-size: 13px; font-weight: 600; color: #333; margin-top: 8px; }
+
+.settings-form input,
+.settings-form textarea {
+  background: #f4f4f5;
+  border: 1px solid #e4e4e7;
+  border-radius: 8px;
+  color: #111;
+  font-size: 13px;
+  padding: 10px 12px;
+  width: 100%;
+  resize: vertical;
+}
+
+.settings-form input:focus,
+.settings-form textarea:focus {
+  outline: none;
+  border-color: #4f46e5;
+}
+
+.settings-form small { font-size: 11px; color: #999; }
+.settings-form small a { color: #4f46e5; text-decoration: none; }
+
+.save-btn {
+  margin-top: 8px;
+  background: #4f46e5;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.save-btn:hover { background: #4338ca; }
+
+.save-msg { font-size: 13px; color: #15803d; text-align: center; }
