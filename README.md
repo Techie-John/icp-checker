@@ -60,7 +60,7 @@ PRs welcome. Open an issue first for major changes.
 
 ## Need help with your marketing?
 
-This extension was built by **[John Ayodele](https://linkedin.com/in/techie-john)** — a software engineer who helps early-stage startups get their first users through organic marketing (no paid ads, no bloated agencies).
+This extension was built by **[John Ayodele](https://linkedin.com/in/techie-john)** — the software engineer who helps early-stage startups get their first users through organic marketing (no paid ads, no bloated agencies).
 
 If you're struggling to get traction, I offer done-for-you marketing for founders who'd rather be building than figuring out outreach.
 
